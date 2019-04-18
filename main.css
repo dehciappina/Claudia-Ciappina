@@ -45,17 +45,24 @@ h1 {
         transform: translateX(-9vw);
     }
 
-h2, #cta span, h3 {
+h2, #cta span, h3, p {
     margin-left:auto;
     margin-right: auto;
     width: 85%;
 }
 
 h2 {
-    font-size: 3.2vh;
     margin-top: 10vh;
     margin-bottom: 6vh;
+}
+
+h2, p {
+    font-size: 3.2vh;
     text-shadow: 0 0.3vh 0.3vh white;
+}
+
+p {
+    margin-bottom: 3vh;
 }
 
     h2 b {
@@ -71,7 +78,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    padding: 3vh 0;
+    text-align: center;
 }
 
 header {
@@ -96,11 +105,12 @@ header {
     width: 100%;
     overflow-x: hidden;
     max-width: 62vh;
-    margin: 0 auto;
+    margin: 6vh auto 0 auto;
 }
 
     .divisor svg {
         transform: scale(1.4);
+        display: block;
     }
 
 #contact_container {
@@ -116,9 +126,14 @@ header {
     max-width: 100%;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
+#about_section {
+    background:white;
+}
 
 
 
@@ -189,7 +204,6 @@ header {
 
     .divisor svg {
         transform: scale(1);
-        margin-top: 6vh;
     }
 
     #contact_container {
@@ -223,7 +237,7 @@ header {
 
 
 
-@media (min-width:180vh) {
+@media (min-width:162vh) {
 
     h2 b {
         font-weight: 300;
@@ -231,12 +245,27 @@ header {
     }
 
     .divisor svg {
-        height: 9vh;
         width: 100%;
+        margin-top: 0;
     }
 
     header svg {
         width: 18%;
         height: 3vh;
+    }
+
+    
+    .flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .profile_img {
+        min-width: 55vh;
+        margin: 0 5vh 0 3vw;
+    }
+
+    h3 {
+        text-align: left;
     }
 }
