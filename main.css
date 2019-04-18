@@ -1,0 +1,242 @@
+html {
+    font-size: 8vw;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span {
+    margin: 0;
+}
+
+h1, h3, #cta span {
+    font-family: 'Satisfy', cursive;
+    font-weight: 100;
+}
+
+body {
+    font-size: 8vh;
+    background-image: url(assets/bg.jpg);
+    background-size: auto 100vh;
+    background-position: 85% top;
+    background-repeat-y: no-repeat;
+    color: #00AACA;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    display: block;
+    top: 3%;
+    left: 8vw;
+    right: 0;
+    line-height: 1.4rem;
+    padding-top: 3vh;
+}
+
+    h1 span {
+        font-size: 0.8rem;
+        display: inline-block;
+        transform: translateX(-9vw);
+    }
+
+h2, #cta span, h3 {
+    margin-left:auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+h2 {
+    font-size: 3.2vh;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    text-shadow: 0 0.3vh 0.3vh white;
+}
+
+    h2 b {
+        font-weight: 400;
+    }
+
+    #cta span {
+    font-size: 1rem;
+    line-height: 1rem;
+    position:relative;
+    text-align: center;
+    display: block;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+header {
+    width: 100%;
+}
+
+    header picture, header img {
+        width: 100%;
+        height: 38vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+    header svg {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        height: 4vw;
+    }
+
+.divisor {
+    width: 100%;
+    overflow-x: hidden;
+    max-width: 62vh;
+    margin: 0 auto;
+}
+
+    .divisor svg {
+        transform: scale(1.4);
+    }
+
+#contact_container {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    width: 9vh;
+    height: 9vh;
+}
+
+.profile_img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:90vh) {
+
+    html {
+        font-size: calc(5vh + 2vw);
+    }
+
+    body {
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: right center;
+    }
+
+    header picture, header img {
+        height: 62vh;
+    }
+
+    h1 {
+        line-height: 1rem;    
+    }
+
+        h1 span {
+            font-size: 0.62rem;
+            transform: translateX(-1.7rem);
+        }
+    
+    h2 {
+        font-size: 0.62rem;
+        text-align: center;
+        margin-top: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    #cta {
+        cursor: pointer;
+        transition:background 1s ease;
+    }
+
+
+        #cta span {
+            font-size: 0.6rem;
+            line-height: 0.7rem;
+        }
+
+    header svg {
+        width: 25%;
+        height: 3vh;
+        max-width: 30vh;
+    }
+
+    .divisor svg {
+        transform: scale(1);
+        margin-top: 6vh;
+    }
+
+    #contact_container {
+        bottom: 1rem;
+        right: 1.6rem;
+        width: 0.9rem;
+        height: 0.9rem;
+        min-width: 7.5vh;
+    }
+
+    .divisor {
+        max-width: unset;
+        margin: inherit;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:180vh) {
+
+    h2 b {
+        font-weight: 300;
+        color: #08A;
+    }
+
+    .divisor svg {
+        height: 9vh;
+        width: 100%;
+    }
+
+    header svg {
+        width: 18%;
+        height: 3vh;
+    }
+}
