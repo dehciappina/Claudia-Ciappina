@@ -2,6 +2,11 @@ html {
     font-size: 8vw;
 }
 
+body {
+    opacity: 0;
+    /* transition:opacity 2s ease-in-out; */
+}
+
 body, p, h1, h2, h3, h4, h5, h6, span {
     margin: 0;
     cursor: default;
@@ -59,8 +64,8 @@ h2 {
 }
 
 h2 {
-    margin-top: 10vh;
-    margin-bottom: 6vh;
+    margin-top: 15vh;
+    margin-bottom: 9vh;
     width: 90%;
     font-size: 3.4vh;
     text-align: center;
@@ -135,9 +140,13 @@ header {
         position:absolute;
         transition:transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateY(0) scale(0);
-        height: 7vh;
+        height: 6vh;
         display: grid;
         user-select: none;
+    }
+
+    #contact_container a:hover, #contact_container div:hover {
+        filter: drop-shadow(0 1vh 0.5vh #ccc);
     }
 
     #contact_container a img, #contact_container div img {
@@ -152,6 +161,10 @@ header {
 
     #contact_container svg:hover {
         transform:scale(1.15)
+    }
+
+    #contact_container svg:active {
+        transform:scale(1)
     }
 
 .profile_img {

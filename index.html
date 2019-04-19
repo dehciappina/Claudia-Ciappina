@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 
-    <script src="scripts/toggleContacts.js" defer></script>
+    <script src="scripts/toggleContacts.js" async></script>
 </head>
 <body>
     <header>
@@ -78,14 +78,18 @@
         </div>
     </section>
 
-    <div id="contact_container">
-        <a href="https://wa.me/5511951378599" id="whatsapp_bt">
+    <div id="contact_container" title="Clique para exibir/ocultar formas de contato">
+        <a href="https://wa.me/5511951378599" id="whatsapp_bt" title="Fale comigo pelo WhatsApp">
             <img src="assets/whatsapp.svg" alt="">
         </a>
 
-        <div id="email_bt">
+        <div id="email_bt" title="Enviar e-mail">
             <img src="assets/email.svg" alt="">
         </div>
+
+        <a href="tel:11951378599" id="tel_bt" title="Ligue para mim">
+            <img src="assets/tel.svg" alt="">
+        </a>
         
         <?xml version="1.0" encoding="UTF-8"?>
         <svg id="menu_activator" enable-background="new 0 0 109.9 89.5" version="1.1" viewBox="0 0 109.9 89.5" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
