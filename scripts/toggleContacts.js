@@ -4,6 +4,7 @@ window.onload = function() {
 
 let showingContacts = false;
 const contactTrigger = document.querySelector('#menu_activator')
+const letsTalk = document.querySelector('#cta span')
 
 const whatsAppBt = document.querySelector('#whatsapp_bt')
 const emailBt = document.querySelector('#email_bt')
@@ -22,11 +23,24 @@ function toggleContacts() {
                 emailBt.style.transform = "translateY(-16vh) scale(1)"
                     setTimeout(() => {
                         telBt.style.transform = "translateY(-24vh) scale(1)"
-                    }, 150);
-            }, 150);
+                    }, 100);
+            }, 100);
             
         showingContacts = true;
     }
 }
 
 contactTrigger.addEventListener('click', toggleContacts)
+
+    
+let counter = 0;
+
+
+letsTalk.addEventListener('mouseover', function() {
+    if(counter < 1) {
+        ++counter
+        toggleContacts()
+    } else {
+        return;
+    }
+})
