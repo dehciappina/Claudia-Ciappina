@@ -56,7 +56,7 @@ h2, #cta span, h3, p {
     margin-right: auto;
 }
 
-#cta span, h3, p {
+#cta span, p {
     width: 85%;
 }
 
@@ -78,6 +78,8 @@ h2, p {
 p {
     margin-bottom: 3vh;
     font-size: 3.2vh;
+    color: #89B;
+    font-weight: 300;
 }
 
     h2 b {
@@ -94,6 +96,10 @@ p {
 
 h3 {
     font-size: 1.4rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(white 62%, transparent);
+    padding: 0 0 3vh 3vh;
 }
 
 header {
@@ -148,9 +154,9 @@ header {
     }
 
         @keyframes contact_attention {
-            0% { transform:translateY(0);
-            } 50% { transform:translateY(-3vh);
-            } 100% { transform:translateY(0);
+            0% { transform:translateX(0);
+            } 50% { transform:translateX(3vh);
+            } 100% { transform:translateX(0);
             }
         }
 
@@ -402,14 +408,17 @@ footer {
 
     .profile_img {
         min-width: 62vh;
-        margin: 0 0 0 1vw;
+        margin: 0 9vh 0 1vw;
         position: sticky;
         bottom: 0;
     }
 
     h3 {
         font-size: 0.9rem;
-        padding: 3vh 0 1vh 0;
+        padding: 0vh 0 0vh 0;
+        background: white;
+        box-shadow: 0 -1vh 1vh 1vh white;
+        width: 90%;
     }
 
     p:last-child {
@@ -427,5 +436,18 @@ footer {
         object-fit: cover;
         border-radius: 1vh;
         box-shadow: 0 2vh 2vh #EEE;
+        margin: 6vh 0;
+        max-width: 72%;
+    }
+
+    p {
+        width: auto;
+        margin-right: 19vw;
+        text-align: justify;
+    }
+
+    h3 {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

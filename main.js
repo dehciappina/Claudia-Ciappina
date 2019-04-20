@@ -38,7 +38,7 @@ let counter = 0;
 
 
 letsTalk.addEventListener('mouseover', function() {
-    if(counter < 1) {
+    if(counter < 1 && showingContacts === false) {
         ++counter
         toggleContacts()
     } else {
