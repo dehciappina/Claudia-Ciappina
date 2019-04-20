@@ -4,7 +4,7 @@ html {
 
 body {
     opacity: 0;
-    /* transition:opacity 2s ease-in-out; */
+    transition:opacity 2s ease-in-out;
 }
 
 body, p, h1, h2, h3, h4, h5, h6, span {
@@ -94,7 +94,7 @@ p {
 
 h3 {
     font-size: 1.4rem;
-    padding: 3vh 0;
+    padding: 3vh 0 1vh 0;
     text-align: center;
 }
 
@@ -170,6 +170,7 @@ header {
 .profile_img {
     display: block;
     max-width: 100%;
+    -webkit-mask-image: linear-gradient(white 62%, transparent);
 }
 
 .flex {
@@ -180,6 +181,32 @@ header {
 #about_section {
     background:white;
 }
+
+footer {
+    width: 100%;
+    height: 20vh;
+    /* background: linear-gradient(150deg, #DEF, white 62%);
+    box-shadow: 0 0 15vh; */
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -251,7 +278,7 @@ header {
     }
 
     #contact_container {
-        bottom: 1rem;
+        bottom: 0.6rem;
         right: 1.6rem;
         width: 0.9rem;
         height: 0.9rem;
@@ -309,7 +336,7 @@ header {
 
     .profile_img {
         min-width: 62vh;
-        margin: 0 0 0 2vw;
+        margin: 0 0 0 1vw;
         position: sticky;
         bottom: 0;
     }
@@ -317,5 +344,15 @@ header {
     h3 {
         text-align: left;
         font-size: 0.9rem;
+    }
+
+    p:last-child {
+        margin-bottom: 15vh;
+    }
+
+    #profImg {
+        transform:translateX(-100%);
+        transition:transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
     }
 }
