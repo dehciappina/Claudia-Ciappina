@@ -19,11 +19,11 @@ function toggleContacts() {
 
         showingContacts = false;
     } else {
-        whatsAppBt.style.transform = "translateY(-8vh) scale(1)"
+        whatsAppBt.style.transform = "translateY(-9vh) scale(1)"
             setTimeout(() => {
-                emailBt.style.transform = "translateY(-16vh) scale(1)"
+                emailBt.style.transform = "translateY(-18vh) scale(1)"
                     setTimeout(() => {
-                        telBt.style.transform = "translateY(-24vh) scale(1)"
+                        telBt.style.transform = "translateY(-27vh) scale(1)"
                     }, 100);
             }, 100);
             
