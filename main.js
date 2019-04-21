@@ -20,12 +20,8 @@ function toggleContacts() {
         showingContacts = false;
     } else {
         whatsAppBt.style.transform = "translateY(-9vh) scale(1)"
-            setTimeout(() => {
-                emailBt.style.transform = "translateY(-18vh) scale(1)"
-                    setTimeout(() => {
-                        telBt.style.transform = "translateY(-27vh) scale(1)"
-                    }, 100);
-            }, 100);
+        emailBt.style.transform = "translateY(-18vh) scale(1)"
+        telBt.style.transform = "translateY(-27vh) scale(1)"
             
         showingContacts = true;
     }
@@ -33,33 +29,36 @@ function toggleContacts() {
 
 contactTrigger.addEventListener('click', toggleContacts)
 
-    
 let counter = 0;
 
-
-letsTalk.addEventListener('mouseover', function() {
+function autoShowContacts()  {
     if(counter < 1 && showingContacts === false) {
         ++counter
         toggleContacts()
     } else {
         return;
     }
-})
+}
 
-
-
-
+letsTalk.addEventListener('mouseover', autoShowContacts)
 
 const profImg = document.querySelector('#profImg')
+let showingProfImg = false;
 
 if (window.matchMedia("(min-width: 180vh)").matches) {
 
     document.body.onscroll = function() {
-        if(window.scrollY > (window.innerHeight / 3)) {
-            profImg.style.transform = 'translateX(0)';
-            setTimeout(() => {
-                profImg.style.willChange = 'auto'
-            }, 2000);
+        if (showingProfImg === false) {
+            if(window.scrollY > (window.innerHeight / 1.618)) {
+                profImg.style.transform = 'translateX(0)';
+                profImg.style.opacity = 1;
+                setTimeout(() => {
+                    profImg.style.willChange = 'auto'
+                }, 2000);
+                showingProfImg = true;
+            }
+        } else if (window.scrollY > (document.body.scrollHeight - (window.innerHeight * 1.38))) {
+            autoShowContacts()
         }
     }
 }
