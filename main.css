@@ -682,4 +682,14 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
+
+    #form_container {
+        width: 100%;
+    }
+    
+    #send_bt, input, textarea, label {
+        font-size: 16px;
+        font-weight:300;
+    }
+
 }
