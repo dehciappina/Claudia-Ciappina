@@ -59,6 +59,23 @@ if (window.matchMedia("(min-width: 180vh)").matches) {
             }
         } else if (window.scrollY > (document.body.scrollHeight - (window.innerHeight * 1.38))) {
             autoShowContacts()
+            document.querySelector('.flower_img').style.animation = "flower_move 4s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate";
         }
     }
 }
+
+const formWindow = document.querySelector('#form_container')
+const outArea = document.querySelector('#outarea')
+
+emailBt.addEventListener('click', function() {
+    toggleContacts()
+    outArea.style.opacity = 1;
+    outArea.style.visibility = "visible";
+    formWindow.style.transform = "translateY(0)";
+})
+
+outArea.addEventListener('click', function() {
+    outArea.style.opacity = 0;
+    outArea.style.visibility = "hidden";
+    formWindow.style.transform = "translateY(-100%)";
+})
