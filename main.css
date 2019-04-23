@@ -617,7 +617,7 @@ footer {
         margin: 0 auto;
         left: 0;
         right: 0;
-        box-shadow: 0 0 30vh 10vh #CEF;
+        box-shadow: 0 3vh 7vh #9BC;
         border-radius: 0 0 2vh 2vh;
     }
 
@@ -628,6 +628,10 @@ footer {
 
     #send_bt, input, textarea, label {
         font-size: 3vh;
+    }
+
+    #outarea {
+        background: rgba(255, 255, 255, 0.6);
     }
 }
 
