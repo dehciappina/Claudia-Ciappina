@@ -41,6 +41,13 @@ function autoShowContacts()  {
 }
 
 letsTalk.addEventListener('mouseover', autoShowContacts)
+letsTalk.addEventListener('click', function() {
+    letsTalk.classList.add('jackInTheBox')
+})
+
+letsTalk.addEventListener('animationend', function() {
+    letsTalk.classList.remove('jackInTheBox')
+})
 
 const profImg = document.querySelector('#profImg')
 let showingProfImg = false;
@@ -77,5 +84,5 @@ emailBt.addEventListener('click', function() {
 outArea.addEventListener('click', function() {
     outArea.style.opacity = 0;
     outArea.style.visibility = "hidden";
-    formWindow.style.transform = "translateY(-100%)";
+    formWindow.style.transform = "translateY(-110vh)";
 })
