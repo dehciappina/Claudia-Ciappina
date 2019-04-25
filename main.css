@@ -2,9 +2,43 @@ html {
     font-size: 8vw;
 }
 
-body {
-    /* transition:opacity 2s ease-in-out; */
-    opacity: 0;
+#loading_window {
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 2;
+    position:fixed;
+    background:white;
+    opacity: 1;
+}
+
+#loading_window svg {
+    animation: rotate_icon 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    height: 15vh;
+    width: 15vh;
+    top: 42.5%;
+}
+
+#loading_window span {
+    position: absolute;
+    text-align: center;
+    font-weight: 300;
+    font-size: 4vh;
+    color: #CCC;
+    bottom: 30%;
+    width: 100%;
+}
+
+@keyframes rotate_icon {
+    0% {
+        transform:rotate(0deg);
+    } 100% {
+        transform:rotate(720deg);
+    }
 }
 
 body, p, h1, h2, h3, h4, h5, h6, span {
@@ -20,7 +54,7 @@ h1, h3, #cta span {
 body {
     background-image: url(assets/bg.jpg);
     font-family: 'Roboto', sans-serif;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-position: 85% top;
     background-size: auto 100vh;
     overflow-x: hidden;
