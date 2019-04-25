@@ -1,7 +1,10 @@
-window.onload = function() {
+
+document.onreadystatechange = function () {
+  if (document.readyState == "interactive") {
     document.body.style.transition = "opacity 2s cubic-bezier(0.18, 0.89, 0.32, 1.28)"
     document.body.style.opacity = 1
-};
+  }
+}
 
 let showingContacts = false;
 const contactTrigger = document.querySelector('#menu_activator')
