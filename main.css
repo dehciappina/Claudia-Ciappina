@@ -3,13 +3,13 @@ html {
 }
 
 body {
-    opacity: 0;
     transition:opacity 2s ease-in-out;
+    opacity: 0;
 }
 
 body, p, h1, h2, h3, h4, h5, h6, span {
-    margin: 0;
     cursor: default;
+    margin: 0;
 }
 
 h1, h3, #cta span {
@@ -18,31 +18,31 @@ h1, h3, #cta span {
 }
 
 body {
-    font-size: 8vh;
     background-image: url(assets/bg.jpg);
-    background-size: auto 100vh;
-    background-position: 85% top;
-    background-repeat-y: no-repeat;
-    color: #00AACA;
     font-family: 'Roboto', sans-serif;
+    background-repeat-y: no-repeat;
+    background-position: 85% top;
+    background-size: auto 100vh;
     overflow-x: hidden;
+    color: #00AACA;
+    font-size: 8vh;
 }
 
 h1, h2 {
-    margin: 0 auto;
     font-weight: 300;
+    margin: 0 auto;
 }
 
 h1 {
-    text-align: center;
-    color: white;
-    font-size: 1.6rem;
-    display: block;
-    top: 3%;
-    left: 8vw;
-    right: 0;
     line-height: 1.4rem;
+    text-align: center;
+    font-size: 1.6rem;
     padding-top: 3vh;
+    color: white;
+    display: block;
+    left: 8vw;
+    top: 3%;
+    right: 0;
 }
 
     h1 span {
@@ -65,11 +65,11 @@ p {
 }
 
 h2 {
-    margin-top: 15vh;
-    margin-bottom: 9vh;
-    width: 90%;
-    font-size: 3.4vh;
     text-align: center;
+    margin-bottom: 9vh;
+    font-size: 3.4vh;
+    margin-top: 15vh;
+    width: 90%;
 }
 
 h2, p {
@@ -78,9 +78,9 @@ h2, p {
 
 p {
     margin-bottom: 3vh;
+    font-weight: 300;
     font-size: 3.2vh;
     color: #8AC;
-    font-weight: 300;
 }
 
     b {
@@ -88,16 +88,17 @@ p {
     }
 
     #cta span {
-    font-size: 1rem;
+    text-align: center;
     line-height: 1rem;
     position:relative;
-    text-align: center;
+    font-size: 1rem;
     display: block;
     max-width: 100%;
 }
 
 h3 {
     font-size: 1.4rem;
+    text-align: center;
 }
 
 header {
@@ -105,17 +106,17 @@ header {
 }
 
     header picture, header img {
-        width: 100%;
-        height: 38vh;
         position: absolute;
+        height: 38vh;
+        width: 100%;
         z-index: -1;
     }
 
     header svg {
         display: block;
-        width: 50%;
         margin: 0 auto;
         height: 4vw;
+        width: 50%;
     }
 
 .divisor {
@@ -131,19 +132,19 @@ header {
 #contact_container {
     position: fixed;
     bottom: 5vh;
+    height: 9vh;
     right: 5vh;
     width: 9vh;
-    height: 9vh;
 }
 
     #contact_container a, #contact_container div {
-        height: 6.2vh;
-        position:absolute;
         transition:transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateY(0) scale(0);
-        height: 6vh;
-        user-select: none;
         will-change: transform;
+        position:absolute;
+        user-select: none;
+        height: 6.2vh;
+        height: 6vh;
     }
 
     #contact_container div {
@@ -211,16 +212,16 @@ header {
 }
 
     .post_img {
-        width: 85%;
+        border-radius: 2vh;
         margin: 6vh auto;
         display: block;
-        border-radius: 2vh;
+        width: 85%;
     }
 
 footer {
-    width: 100%;
-    height: 27vh;
     position: relative;
+    height: 27vh;
+    width: 100%;
 }
     footer a:hover {
         text-decoration: underline;
@@ -231,21 +232,21 @@ footer {
     }
 
     footer span, footer a {
-        display: block;
+        transform: translateY(100%);
+        text-decoration: none;
         text-align: center;
         font-size: 5.2vw;
-        text-decoration: none;
+        display: block;
         color: #8AC;
-        transform: translateY(100%);
     }
 
     #form_container {
+        transition:transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(-110vh);
+        background: white;
         position:fixed;
         width:100%;
         top:0;
-        transition:transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        background: white;
-        transform: translateY(-110vh);
     }
 
     form {
@@ -259,9 +260,9 @@ footer {
     }
 
     form span {
+        color: #AAA;
         font-size: 3vw;
         text-align: center;
-        color: #AAA;
         text-transform: uppercase;
     }
 
@@ -277,15 +278,15 @@ footer {
     }
 
         input, textarea {
-            border: none;
             background: #F8F8F8;
-            width: 100%;
-            margin: 1vw 0 3vw 0;
             box-sizing: border-box;
-            padding: 0 3vw;
-            font-size: 5vw;
+            margin: 1vw 0 3vw 0;
             font-weight: 300;
             color: #004646;
+            padding: 0 3vw;
+            font-size: 5vw;
+            border: none;
+            width: 100%;
         }
 
             input:focus, textarea:focus {
@@ -301,12 +302,12 @@ footer {
     }
 
     #send_bt {
-        font-size: 6vw;
         background: #00AACA;
-        color: white;
         border-radius: 10vw;
-        height: 12vw;
         font-weight: 300;
+        font-size: 6vw;
+        color: white;
+        height: 12vw;
     }
 
         #send_bt, input, textarea {
@@ -314,15 +315,15 @@ footer {
         }
 
     #outarea {
+        transition:opacity 0.3s linear, visibility 0.3s linear;
+        background: rgba(0, 0, 0, 0.2);
+        visibility: hidden;
         position: fixed;
-        top:0;
+        opacity:0;
+        bottom:0;
         right:0;
         left:0;
-        bottom:0;
-        background: rgba(0, 0, 0, 0.2);
-        opacity:0;
-        visibility: hidden;
-        transition:opacity 0.3s linear, visibility 0.3s linear;
+        top:0;
     }
 
     #sky_bg {
@@ -369,9 +370,9 @@ footer {
     }
 
     body {
+        background-position: right center;
         background-attachment: fixed;
         background-size: cover;
-        background-position: right center;
     }
 
     header picture, header img {
@@ -390,10 +391,10 @@ footer {
         }
     
     h2 {
+        margin-bottom: 1.4rem;
         font-size: 0.62rem;
         text-align: center;
         margin-top: 1.6rem;
-        margin-bottom: 1.4rem;
     }
 
     #cta {
@@ -417,12 +418,12 @@ footer {
     }
 
     #contact_container {
-        bottom: 0.6rem;
         right: 1.6rem;
         width: 0.9rem;
         height: 0.9rem;
-        min-width: 7.5vh;
+        bottom: 0.6rem;
         cursor: pointer;
+        min-width: 7.5vh;
     }
 
     .divisor {
@@ -441,40 +442,40 @@ footer {
 
     
     #contact_container span {
-        display: initial;
-        position: absolute;
-        right: 10vh;
-        top: 2vh;
-        color: #00AACA;
-        font-size: 2.6vh;
+        transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1), visibility 0.3s cubic-bezier(0, 0, 0.2, 1);
         background: #FAFAFA;
         border-radius: 20vh;
-        padding: 1vh 2vh;
-        text-align: right;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1), transform 0.3s cubic-bezier(0, 0, 0.2, 1), visibility 0.3s cubic-bezier(0, 0, 0.2, 1);
         white-space: nowrap;
+        position: absolute;
+        visibility: hidden;
+        text-align: right;
+        display: initial;
+        color: #00AACA;
+        font-size: 2.6vh;
+        padding: 1vh 2vh;
+        right: 10vh;
+        opacity: 0;
+        top: 2vh;
     }
 
     #contact_container a:hover span, #contact_container div:hover span {
+        transform: translateY(0);
         visibility: visible;
         opacity: 1;
-        transform: translateY(0);
     }
 
     input, textarea {
-        margin: 1vh 0 2vh 0;
         box-sizing: border-box;
-        padding: 0 2vh;
+        margin: 1vh 0 2vh 0;
         font-size: 18px;
+        padding: 0 2vh;
     }
 
     textarea {
-        min-width: 100%;
         max-height: 27vw;
-        height: 20vh;
         padding-top: 2vh;
+        min-width: 100%;
+        height: 20vh;
     }
 
     label {
@@ -486,11 +487,11 @@ footer {
     }
 
     #send_bt {
+        padding-right: 9vh;
+        text-align: right;
+        border-radius: 0;
         font-size: 18px;
         cursor: pointer;
-        text-align: right;
-        padding-right: 9vh;
-        border-radius: 0;
         font-weight: 400;
     }
 
@@ -544,24 +545,27 @@ footer {
 
     
     .flex {
-        display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
+        display: flex;
     }
 
     .profile_img {
-        min-width: 68vh;
-        margin: 0 6vh 0 1vw;
-        position: sticky;
         bottom: 0;
+        min-width: 68vh;
+        position: sticky;
+        margin: 0 6vh 0 1vw;
         -webkit-mask-image: linear-gradient(195deg, white 62%, transparent);
     }
 
     h3 {
-        font-size: 0.9rem;
+        box-shadow: 0 -1vh 1vh 1vh white;
         padding: 0vh 0 0vh 0;
         background: white;
-        box-shadow: 0 -1vh 1vh 1vh white;
+        font-size: 0.9rem;
+        text-align: left;
+        margin-right: 0;
+        margin-left: 0;
         width: 90%;
     }
 
@@ -570,17 +574,17 @@ footer {
     }
 
     #profImg {
-        transform:translateX(-10%);
-        opacity:0;
         transition:transform 1s cubic-bezier(0, 0, 0.2, 1), opacity 2s ease;
         will-change: transform, opacity;
+        transform:translateX(-10%);
+        opacity:0;
     }
 
     .post_img {
-        object-fit: cover;
         border-radius: 1vh;
-        margin: 6vh 0;
+        object-fit: cover;
         max-width: 74%;
+        margin: 6vh 0;
     }
 
     .shadow_img {
@@ -593,11 +597,6 @@ footer {
         text-align: justify;
     }
 
-    h3 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     #absolute_footer {
         position: absolute;
         width: 100%;
@@ -605,12 +604,12 @@ footer {
 
     
     .flower_img {
-        display:initial;
+        transform:translateX(-2vh);
         position: absolute;
+        max-height: 62vh;
+        display:initial;
         bottom: 0;
         left: 0;
-        max-height: 62vh;
-        transform:translateX(-2vh);
     }
 
     @keyframes flower_move {
@@ -622,18 +621,18 @@ footer {
     }
 
     #form_container {
-        width: 38%;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
         box-shadow: 0 3vh 7vh #9BC;
         border-radius: 0 0 2vh 2vh;
+        margin: 0 auto;
+        width: 38%;
+        left: 0;
+        right: 0;
     }
 
     textarea {
         max-height: 45vh;
-        height: 25vh;
         min-height: 15vh;
+        height: 25vh;
     }
 
     #send_bt, input, textarea, label {
@@ -645,8 +644,8 @@ footer {
     }
 
     #sky_bg {
-        display:initial;
         position: absolute;
+        display:initial;
         width: 30vw;
     }
 }
@@ -669,8 +668,8 @@ footer {
 
 @media screen and (max-height:400px) and (orientation:landscape) {
     #contact_container {
-        bottom: 1rem;
         right: 2rem;
+        bottom: 1rem;
         width: 1.6rem;
         height: 1.6rem;
     }
