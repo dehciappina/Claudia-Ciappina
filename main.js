@@ -3,7 +3,8 @@ const loadingScreen = document.querySelector('#loading_window')
 
 document.onreadystatechange = function () {
   if (document.readyState == "interactive" || document.readyState == "complete") {
-    loadingScreen.style.transition = "opacity 2s cubic-bezier(0.18, 0.89, 0.32, 1.28)"
+    loadingScreen.style.transition = "opacity 1s ease, visibility 1s ease"
+    loadingScreen.style.visibility = "hidden"
     loadingScreen.style.opacity = 0
   }
 }

@@ -11,6 +11,7 @@ html {
     position:fixed;
     background:white;
     opacity: 1;
+    visibility:visible;
 }
 
 #loading_window svg {
