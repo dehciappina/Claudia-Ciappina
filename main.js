@@ -11,9 +11,7 @@ document.onreadystatechange = function () {
         loadingScreen.style.display = "none"
     }, 2000);
   } else {
-    setTimeout(() => {
         loadingScreen.style.display = "none"
-    }, 1000);
   }
 
 }
