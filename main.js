@@ -44,14 +44,6 @@ function autoShowContacts()  {
 }
 
 letsTalk.addEventListener('mouseover', autoShowContacts)
-letsTalk.addEventListener('click', function() {
-    letsTalk.classList.add('jackInTheBox')
-})
-
-letsTalk.addEventListener('animationend', function() {
-    letsTalk.classList.remove('jackInTheBox')
-})
-
 const profImg = document.querySelector('#profImg')
 let showingProfImg = false;
 
