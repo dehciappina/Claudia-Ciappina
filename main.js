@@ -6,7 +6,13 @@ document.onreadystatechange = function () {
     loadingScreen.style.transition = "opacity 1s ease, visibility 1s ease"
     loadingScreen.style.visibility = "hidden"
     loadingScreen.style.opacity = 0
+
+    setTimeout(() => {
+        console.log('adnokadsmaspk')
+        loadingScreen.style.display = "none"
+    }, 2000);
   }
+
 }
 
 let showingContacts = false;
