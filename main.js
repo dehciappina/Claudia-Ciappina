@@ -57,7 +57,7 @@ letsTalk.addEventListener('mouseover', autoShowContacts)
 const profImg = document.querySelector('#profImg')
 let showingProfImg = false;
 
-if (window.matchMedia("(min-width: 180vh)").matches) {
+if (window.matchMedia("(min-width: 162vh)").matches) {
 
     document.body.onscroll = function() {
         if (showingProfImg === false) {
@@ -78,6 +78,7 @@ if (window.matchMedia("(min-width: 180vh)").matches) {
 
 const formWindow = document.querySelector('#form_container')
 const outArea = document.querySelector('#outarea')
+const emailCaller = document.querySelector('.email_caller')
 
 emailBt.addEventListener('click', function() {
     toggleContacts()
@@ -91,3 +92,30 @@ outArea.addEventListener('click', function() {
     outArea.style.visibility = "hidden";
     formWindow.style.transform = "translateY(-110vh)";
 })
+
+emailCaller.addEventListener('click', function() {
+    outArea.style.opacity = 1;
+    outArea.style.visibility = "visible";
+    formWindow.style.transform = "translateY(0)";
+})
+
+const h1 = document.querySelector('h1')
+const h2 = document.querySelector('h2')
+const cta = document.querySelector('#cta')
+
+if (window.matchMedia("(min-width: 90vh)").matches) {
+    document.body.addEventListener('mousemove', function(event) {
+        if(window.scrollY < (window.innerHeight / 1.618)) {
+            let eventX = event.clientX - window.innerWidth/2
+            let eventY = event.clientY - window.innerHeight/2
+    
+            h1.style.transform = 'translateX(' + eventX / 20 +'px) translateY(' + eventY / 30 + 'px)'
+    
+            h2.style.transform = 'translateX(' + eventX / 30 +'px) translateY(' + eventY / 20 + 'px)'
+    
+            cta.style.transform = 'translateX(' + eventX / 40 +'px) translateY(' + eventY / 30 + 'px)'
+    
+            console.log(eventX + ', ' + eventY)
+        }
+    })
+}
